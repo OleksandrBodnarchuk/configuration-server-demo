@@ -1,3 +1,5 @@
+server:
+  port: 9191
 eureka:
   instance:
     client:
@@ -15,8 +17,6 @@ spring:
         uri: lb://DEPARTMENT-SERVICE
         predicates[0]: Path=/api/departments/**
 
-server:
-  port: 9191
 management:
   endpoints:
     web:
