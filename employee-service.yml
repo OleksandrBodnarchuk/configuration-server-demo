@@ -28,4 +28,4 @@ eureka:
 
 user:
   test:
-    message: Hello employee-service. Test message!
+    message: Hello employee-service. This is test message!
