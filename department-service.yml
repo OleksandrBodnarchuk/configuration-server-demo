@@ -19,4 +19,4 @@ eureka:
         defaultZone: http://localhost:8761/eureka/
 my:
   test:
-    message: Hi there, this is test!
+    message: Hi there, this is test message!
