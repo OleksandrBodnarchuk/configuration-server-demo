@@ -1,4 +1,6 @@
 spring:
+  server:
+    port: 8080
   datasource:
     url: jdbc:mysql://localhost:3306/employee_db
     username: root
@@ -8,8 +10,11 @@ spring:
       hibernate:
     hibernate:
       ddl-auto: update
-server:
-  port: 8080
+rabbitmq:
+  host: localhost
+  post: 5672
+  username: guest
+  password: guest
 
 department:
   service:
