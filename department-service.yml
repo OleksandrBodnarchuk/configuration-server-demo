@@ -21,6 +21,20 @@ eureka:
     client:
       serverUrl:
         defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  tracing:
+    sampling:
+      probability: 1.0
+logging:
+  pattern:
+    level: '%p[${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
+  level:
+    org.springframework.web: DEBUG
+
 my:
   test:
     message: Hello department-service. This is test message!
