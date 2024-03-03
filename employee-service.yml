@@ -20,6 +20,10 @@ department:
   service:
     url: http://localhost:8090/api/departments
 
+organization:
+  service:
+    url: http://localhost:8083/api/organizations
+
 eureka:
   instance:
     client:
